@@ -1,0 +1,216 @@
+body, html {
+  margin : 0;
+  padding : 0;
+  background: linear-gradient(to right, #585479, #1c5a8d);
+  font-family: "Josefin Sans";
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  outline: none
+}
+hr {
+  border: .5px solid #09054d
+}
+h1 {
+  width: 80vw;
+  margin: 12px auto;
+  letter-spacing: 4px;
+  color: #150344
+}
+.error, .success {
+  text-align: center
+}
+.error { color: rgb(88, 11, 11);} .success {color: rgb(5, 80, 5);}
+.btnLogout{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background : linear-gradient(to right, rgb(50, 46, 110), rgb(28, 38, 182));
+  padding: 8px;
+  color: white;
+  font-weight: bold 
+}
+.details-box {
+  background : linear-gradient(to right, #43248b, #0b0a6b);
+  width: 80vw;
+  margin: 20px auto;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center
+}
+
+header{
+  color : #aca6ca;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 12px
+}
+.balance {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 3px
+}
+.sendBtn {
+  width: 50px;
+  height: 50px
+}
+.sendSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.transactions {
+  width: 80vw;
+  margin: 40px auto;
+}
+
+.toggleTransaction {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.receivedBtn, .sentBtn {
+  padding: 8px;
+  width: 90px;
+  font-weight: bold;
+  background-color: #656c88;
+  color: #ffd579
+}
+.receivedBtn {
+  border-radius: 8px 0 0 8px;
+}
+.active {
+  background-color: #433a6b;
+}
+.sentBtn {
+  border-radius: 0 8px 8px 0;
+}
+
+.transaction {
+  border-bottom : 2px solid #201b6e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.transName {
+  color: #fcfbf6;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.transDate {
+  margin-top : 3px;
+  color: #060547
+}
+
+.transAmount {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 27px;
+  color: rgb(28, 95, 28)
+}
+.sendModal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.btnCloseSend {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white
+}
+
+.sendForm{
+  background: #5d33f7;
+  width: 70vw
+}
+.formHead {
+  background-color: #081054;
+  color: #8e5ffc;
+  padding: 12px;
+  margin: 0;
+  font-weight: bold
+}
+.sendForm div {
+  margin: 15px 0;
+}
+.sendForm label, .sendForm input, .sendForm select {
+  display: block;
+  width: 200px
+}
+.sendForm label {
+  margin-bottom: 5px;
+}
+.btnTransfer {
+  display: block;
+  width: 90px;
+  margin: auto;
+  color: white;
+  padding: 8px;
+  background: #1b2a6e;
+  margin-top: 10px;
+  font-weight: bold
+}
+.loader {
+border: 8px solid #f3f3f3;
+border-radius: 50%;
+border-top: 8px solid rgb(40, 13, 104);
+width: 10px;
+height: 10px;
+-webkit-animation: spin 2s linear infinite;
+animation: spin 2s linear infinite;
+margin: 8px auto !important;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* AUTH PAGE */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+}
+.auth-form {
+  width: 80vw;
+  background: white;
+  padding: 20px; 
+}
+.auth-form input, .auth-button {
+  display: block;
+  width: 85%;
+  margin: 10px auto;
+  background: #e7e7e7;
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.auth-button{
+  background: #3015aa;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px #726262;
+}
